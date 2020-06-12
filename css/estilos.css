@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #75963b;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+
+	header > img {
+		width: 300px;
+		margin: 20px auto;
+	}
+
+	header > hgroup {
+		text-align: center;
+		line-height: 2em;
+	}
+
+main {
+	width: 90%;
+	max-width: 600px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 2em auto;
+	font-family: 'Roboto';
+}
+
+.aparte {
+	width: 25px;
+	margin-left: 15px;
+	background-color: #AFA8A8;
+	border-color: #AFA8A8;
+}
+
+	.aparte ~ span {
+		color: #DCD6D6;
+	}
+
+	main > form {
+		width: 100%;
+	}
+
+	main > form > div {
+		padding-top: 1.55em; /*usar los padding de los elementos que estén aderidos a un contenedor dinamico*/
+		margin: 0.3em 1.6em;
+	}
+
+	main label {
+		display: block; /*para que me coloque todos los label en una sola linea, como un bloque*/
+		color: #F97500;
+		font-size: .9em;
+	}
+
+	main > input {
+		width: 91%;
+		height: 50px;
+		margin: 30px 27px;
+		font-size: 16px;
+		background-color: #F97500;
+		border: none;
+		border-radius: 2%;
+		color: #fff;
+	}
+
+	/*selecciona todos los inputs de tipo text*/
+	main input[type="text"][id], main input[type="number"][id] {
+		width: 100%;
+		height: 45px;
+		margin-top: 1px;
+		background-color: rgba(0, 0, 0, .7);
+		border: none;
+		border-radius: 2%;
+		border-bottom: solid 2px #F97500;
+		font-size: 14px;
+		color: #fff;
+		padding: 12px;
+	}
+
+	main input[type="text"][id] {
+
+	}
+
+	main > input:hover {
+		background-color: #f29718;
+		cursor: pointer;
+	}
+
+		main > form > div > input[type="radio"] {
+			margin-top: 8px;
+		}
+
+		main > form > div > input[type="radio"] {
+			margin-left: 9px;
+		}
+
+		main > form > div > span {
+			color: #DCD6D6;
+			font-size: 14px;
+		}
+
+			main > form > div > label > span {
+				font-style: italic;
+				color: #F70909;
+				display: none;
+			}
+
+#div-otro-estado-civil, #div-hijos {
+	display: none;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Roboto';
+}
+
+	footer > p {
+		color: #DCD6D6;
+		padding: 15px;
+	}
+
+		footer > p > span {
+			color: #F97500;
+		}

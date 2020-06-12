@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="author" content="Alejandro Castro Valero">
+	<meta name="description" content="Formulario UA">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<script src="javascript/jquery-3.3.1.min.js"></script>
+	<script src="javascript/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<title>Práctica 1 de UA</title>
+</head>
+<body>
+	<header>
+		<img src="Images/ua.png" alt="Imagen no disponible">
+		<hgroup>
+			<h1>Práctica 1 - Formulario Registro</h1>
+			<h2>Ingeniería Multimedia Curso 2018-2019</h2>
+		</hgroup>
+	</header>
+	<main>
+		<form>
+
+			<!-- Creo dos input de texto, la etiqueta label se usa para relacionar la descripción con su input -->
+			<div id="div-nombre">
+				<label for="nombre">Nombre:</label>
+				<input type="text" placeholder="Escriba su nombre" id="nombre" autofocus>
+			</div>
+			<div id="div-apellidos">
+				<label for="apellidos">Apellidos:</label>
+				<input type="text" placeholder="Escriba sus apellidos" id="apellidos">
+			</div>
+			<div id="div-edad">
+				<label>Edad: <span id="warning">(Debe ser mayor de 18 y menor de 99)</span></label>
+				<input type="number" placeholder="Escriba su edad en años" id="edad" min="18" max="99">
+			</div>
+			<div class="ui-widget">
+				<div id="div-pais">
+				<label>País:</label>
+				<input type="text" placeholder="Escriba su país" id="pais">
+			</div>
+			</div>
+			
+			<div id="div-idioma">
+				<label>Idioma:</label>
+				<input type="text" placeholder="Escriba su idioma" id="idioma">
+			</div>
+			<div id="div-estado-civil">
+				<label>Estado civil:</label>
+				<input type="radio" name="radio-civil" value="Soltero"> <span>Soltero</span><br>
+				<input type="radio" name="radio-civil" value="Casado"> <span>Casado</span><br>
+				<input type="radio" name="radio-civil" value="Viudo"> <span>Viudo</span><br>
+				<input type="radio" name="radio-civil" value="Otro"> <span>Otro</span>
+			</div>
+			<div id="div-otro-estado-civil">
+				<label for="estado">Otro estado civil:</label>
+				<input type="text" id="estado" placeholder="Escriba su estado civil">
+			</div>
+			<div id="div-hijos">
+				<label>Número de hijos:</label>
+				<input type="radio" name="hijos" value="0"> <span>0</span>
+				<input type="radio" name="hijos" value="1"> <span>1</span>
+				<input type="radio" name="hijos" value="2"> <span>2</span>
+				<input type="radio" name="hijos" value="3+"> <span>3+</span>
+			</div>
+		</form>
+		<input type="submit" value="Registrar">
+	</main>
+	<footer>
+		<p><span>Autor:</span> Alejandro Castro Valero</p><p><span>&copy; 2019</span> Alejandro Castro</p><p><span>Correo:</span> acv52@alu.ua.es</p>
+	</footer>
+</body>
+</html>
